@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 2",
+	"properties": {
+		"content": {
+			"query": "CREATE EXTERNAL TABLE gold.extsales\nWITH(LOCATION='extsales',\nDATA_SOURCE=source_gold,\nFILE_FORMAT=file_parquet\n) AS \nSELECT * FROM gold.Sales",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
